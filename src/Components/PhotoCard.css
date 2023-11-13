@@ -6,12 +6,30 @@
     width: 100%;
 }
 
-#photoCard img {
+.imgBox {
     height: 250px;
     width: 225px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.imgBox:hover img {
+    scale: 1.2
+}
+
+#photoCard img {
+    height: 100%;
+    width: 100%;
     border-radius: 10px;
     background-position: center;
     background-size: cover;
+    box-shadow: 0 0 5px gray;
+    transition: 0.5s all ease;
+    cursor: pointer;
 }
 
 #box {
@@ -22,4 +40,13 @@
     text-align: center;
     height: 330px;
     width: 300px;
+    box-shadow: 0 0 10px gray ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#box:hover {
+    box-shadow: 0 0 15px #fff ;
 }
