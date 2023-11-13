@@ -1,8 +1,11 @@
+import CustomRoutes from "./CustomRoutes/CustomRoutes"
 
 
 const App = () => {
   return (
-    <div>App</div>
+    <>
+      <CustomRoutes />
+    </>
   )
 }
 
