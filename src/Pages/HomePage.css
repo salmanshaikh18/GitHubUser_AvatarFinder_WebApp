@@ -1,0 +1,23 @@
+#userInput {
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 5px #fff;
+}
+
+.inputBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    border: 2px solid red
+}
+
+.imageContainer {
+    display: grid;
+    grid-template-columns: repeat(4,300px);
+    justify-content: center;
+    gap: 20px;
+}
