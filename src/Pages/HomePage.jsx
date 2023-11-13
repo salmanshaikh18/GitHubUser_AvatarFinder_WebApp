@@ -28,6 +28,7 @@ const HomePage = () => {
 
   return (
     <div className='homePage'>
+         <h1 id="heading">GitHub User Avatar Finder</h1>
         <div className='inputBox'>
             <input id="userInput" onChange={debounceUpdateSearch} type="text" placeholder='Enter GitHub UserName..'/>
         </div>
