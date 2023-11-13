@@ -2,11 +2,13 @@ import { useState } from 'react'
 import './HomePage.css'
 import { useEffect } from 'react'
 import PhotoCard from '../Components/PhotoCard'
+import useDebounce from '../CustomHooks/useDebounce'
 
 const HomePage = () => {
 
     const [photoData, setPhotoData] = useState([])
-    const [query, setQuery] = useState('Salman')
+    const [query, setQuery] = useState('mariya')
+    const debounceUpdateSearch = useDebounce((e) => setQuery(e.target.value))
     
     const getData = async () => {
         try {
@@ -27,7 +29,7 @@ const HomePage = () => {
   return (
     <div className='homePage'>
         <div className='inputBox'>
-            <input id="userInput" type="text" placeholder='Enter GitHub UserName..'/>
+            <input id="userInput" onChange={debounceUpdateSearch} type="text" placeholder='Enter GitHub UserName..'/>
         </div>
         <div className="imageContainer">
             {
