@@ -21,3 +21,22 @@
     justify-content: center;
     gap: 20px;
 }
+
+@media (max-width: 1220px) {
+    .imageContainer {
+        grid-template-columns: repeat(3, 300px);
+    }
+}
+
+@media (max-width: 1000px) {
+    .imageContainer {
+        grid-template-columns: repeat(2, 300px);
+    }
+}
+
+@media (max-width: 767px) {
+    .imageContainer {
+        grid-template-columns: repeat(1, 300px);
+    }
+}
+
